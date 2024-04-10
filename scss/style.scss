@@ -1,0 +1,76 @@
+@import 'fonts';
+@import 'variables';
+@import 'reset';
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1;
+    background: #f7f7f7 url('img/background.jpg') no-repeat center/cover;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: $default-padding;
+    position: relative;
+    width: 100%;
+}
+
+.focus, .phone {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.focus {
+    top: 0;
+    margin-top: $spacing-small;
+}
+
+.phone {
+    bottom: 0;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .features {
+        flex: 1;
+        padding: $spacing-medium;
+        h3 {
+            font-weight: $semibold-weight;
+        }
+    }
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    margin-top: $spacing-medium;
+    .testimonial {
+        flex: 1;
+        text-align: center;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        p {
+            font-family: $raleway-font;
+            font-weight: $light-weight;
+            font-size: 1rem;
+        }
+    }
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+body {
+    font-family: "Helvetica Neue, Helvetica, sans-serif"
+}
